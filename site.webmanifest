@@ -1,0 +1,45 @@
+{
+  "name": "Mariscotti Consulting",
+  "short_name": "Mariscotti",
+  "description": "Liderazgo financiero estratégico para empresas latinoamericanas que facturan entre USD 2M y USD 30M al año. Control de gestión, cash flow y reporting con la disciplina de un CFO de multinacional.",
+  "lang": "es",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#050395",
+  "background_color": "#F1F1F1",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contacto",
+      "url": "/#contacto",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

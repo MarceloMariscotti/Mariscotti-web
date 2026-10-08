@@ -1,0 +1,25 @@
+# Seguridad para todo el sitio. CSP auditada 2026-10-08: sin scripts en línea, sin analítica, sin terceros.
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 0
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests
+  ! Access-Control-Allow-Origin
+
+# Caché del navegador
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/*
+  Cache-Control: public, max-age=604800, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+# Evita que la URL pages.dev se indexe como duplicado.
+# Quita el "#" y reemplaza NOMBRE-DEL-PROYECTO por el nombre real del proyecto en Cloudflare:
+# https://NOMBRE-DEL-PROYECTO.pages.dev/*
+#   X-Robots-Tag: noindex
